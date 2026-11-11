@@ -68,3 +68,10 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\build.ps1 -Test
 - 使用说明.md：更详细的操作说明。
 
 本仓库保留第三方依赖的许可证。v1.0.0 清理了重复版本、测试图片及临时产物；发布包只包含一个主程序。
+## 生成完整发布包
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\package.ps1
+```
+
+打包脚本仅排除软件根目录下的 output、temp 和 .git。vendor/package/js/output 是 MathJax 必需的渲染模块，必须保留。脚本会验证 svg.js 等关键文件和所有收录文件的长度，避免生成缺少依赖的 ZIP。上传 GitHub Release 时请使用该脚本生成的完整 ZIP，不能只上传 EXE。
