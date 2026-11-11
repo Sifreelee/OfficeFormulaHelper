@@ -1,1 +1,0 @@
-﻿PASS native Word equation retains subscript, superscript, combined scripts and dot accent; no pictures.

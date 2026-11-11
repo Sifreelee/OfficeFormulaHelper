@@ -1,0 +1,6 @@
+output/
+temp/
+*.next.exe
+*.zip
+*.rar
+*.pdb

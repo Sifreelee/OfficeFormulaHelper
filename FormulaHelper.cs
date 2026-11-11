@@ -25,8 +25,9 @@ partial class FormulaHelper : Form {
     bool busy;
     dynamic wordTest, pptTest;
     public FormulaHelper() {
+        Directory.CreateDirectory(Path.Combine(root,"output")); Directory.CreateDirectory(Path.Combine(root,"temp"));
         runtime=json.Deserialize<Dictionary<string,object>>(File.ReadAllText(Path.Combine(root,"runtime.json")));
-        Text="通用公式助手 · GPT 公式提取 / Office 可编辑公式"; Width=1060; Height=660; MinimumSize=new Size(1060,580);
+        Text="通用公式助手 v1.0.0 · GPT 公式提取 / Office 可编辑公式"; Width=1060; Height=660; MinimumSize=new Size(1060,580);
         StartPosition=FormStartPosition.CenterScreen; Font=new Font("Microsoft YaHei UI",10);
         var layout=new TableLayoutPanel {Dock=DockStyle.Fill,RowCount=6,ColumnCount=1,Padding=new Padding(12)};
         layout.RowStyles.Add(new RowStyle(SizeType.Absolute,48));layout.RowStyles.Add(new RowStyle(SizeType.Percent,52));

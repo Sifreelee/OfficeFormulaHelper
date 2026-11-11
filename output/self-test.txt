@@ -1,9 +1,0 @@
-﻿PASS SVG import, source roundtrip: 0
-PASS SVG import, source roundtrip: 1
-PASS SVG import, source roundtrip: 2
-PASS SVG import, source roundtrip: 3
-PASS SVG import, source roundtrip: 4
-PASS SVG import, source roundtrip: 5
-PASS update selected equation and preserve shape count
-PASS single-step undo
-Saved example: F:\chatgpt\CodexHome\visualizations\2026\11\10\01a1c413-6a64-77d2-8d55-94ccf031dc95\Office公式助手\output\公式示例_20261111_110434.vsdx
