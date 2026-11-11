@@ -1,0 +1,252 @@
+2026/11/11 10:40:57 System.Exception: 请在 PPT 中选中一个本助手插入的公式。
+   在 FormulaHelper.LoadTarget()
+   在 FormulaHelper.Run(Action action)
+2026/11/11 10:41:24 System.Exception: 请在 PPT 中选中一个要更新的公式。
+   在 FormulaHelper.InsertPpt(Boolean replace)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 10:43:34 System.Runtime.InteropServices.COMException (0x86DB089A): 
+
+请求的操作目前被禁用。
+   在 System.Dynamic.ComRuntimeHelpers.CheckThrowException(Int32 hresult, ExcepInfo& excepInfo, UInt32 argErr, String message)
+   在 CallSite.Target(Closure , CallSite , ComObject , String )
+   在 FormulaHelper.Insert(Boolean replace)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 10:43:49 System.Runtime.InteropServices.COMException (0x86DB089A): 
+
+请求的操作目前被禁用。
+   在 System.Dynamic.ComRuntimeHelpers.CheckThrowException(Int32 hresult, ExcepInfo& excepInfo, UInt32 argErr, String message)
+   在 CallSite.Target(Closure , CallSite , ComObject , String )
+   在 FormulaHelper.Insert(Boolean replace)
+   在 FormulaHelper.<>c__DisplayClass110.<WndProc>b__10f()
+   在 FormulaHelper.Run(Action action)
+2026/11/11 10:44:55 System.Exception: 请在 Visio 中选中一个由本助手插入的公式。
+   在 FormulaHelper.LoadSelected()
+   在 FormulaHelper.LoadTarget()
+   在 FormulaHelper.Run(Action action)
+2026/11/11 10:45:29 System.Runtime.InteropServices.COMException (0x86DB089A): 
+
+请求的操作目前被禁用。
+   在 System.Dynamic.ComRuntimeHelpers.CheckThrowException(Int32 hresult, ExcepInfo& excepInfo, UInt32 argErr, String message)
+   在 CallSite.Target(Closure , CallSite , ComObject , String )
+   在 FormulaHelper.Insert(Boolean replace)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 10:45:38 System.Runtime.InteropServices.COMException (0x86DB089A): 
+
+请求的操作目前被禁用。
+   在 System.Dynamic.ComRuntimeHelpers.CheckThrowException(Int32 hresult, ExcepInfo& excepInfo, UInt32 argErr, String message)
+   在 CallSite.Target(Closure , CallSite , ComObject , String )
+   在 FormulaHelper.Insert(Boolean replace)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 10:45:40 System.Exception: 选中的图形没有本助手保存的公式源码。
+   在 FormulaHelper.LoadSelected()
+   在 FormulaHelper.LoadTarget()
+   在 FormulaHelper.Run(Action action)
+2026/11/11 10:45:41 System.Exception: 只更新由本助手插入的公式，避免替换其他图形。
+   在 FormulaHelper.Insert(Boolean replace)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 10:45:49 System.Runtime.InteropServices.COMException (0x86DB089A): 
+
+请求的操作目前被禁用。
+   在 System.Dynamic.ComRuntimeHelpers.CheckThrowException(Int32 hresult, ExcepInfo& excepInfo, UInt32 argErr, String message)
+   在 CallSite.Target(Closure , CallSite , ComObject , String )
+   在 FormulaHelper.Insert(Boolean replace)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 10:45:56 System.Runtime.InteropServices.COMException (0x86DB089A): 
+
+请求的操作目前被禁用。
+   在 System.Dynamic.ComRuntimeHelpers.CheckThrowException(Int32 hresult, ExcepInfo& excepInfo, UInt32 argErr, String message)
+   在 CallSite.Target(Closure , CallSite , ComObject , String )
+   在 FormulaHelper.Insert(Boolean replace)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 10:46:13 System.Runtime.InteropServices.COMException (0x86DB089A): 
+
+请求的操作目前被禁用。
+   在 System.Dynamic.ComRuntimeHelpers.CheckThrowException(Int32 hresult, ExcepInfo& excepInfo, UInt32 argErr, String message)
+   在 CallSite.Target(Closure , CallSite , ComObject , String )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   在 FormulaHelper.Insert(Boolean replace)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 10:46:24 System.Runtime.InteropServices.COMException (0x86DB089A): 
+
+请求的操作目前被禁用。
+   在 System.Dynamic.ComRuntimeHelpers.CheckThrowException(Int32 hresult, ExcepInfo& excepInfo, UInt32 argErr, String message)
+   在 CallSite.Target(Closure , CallSite , ComObject , String )
+   在 FormulaHelper.Insert(Boolean replace)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 11:10:38 Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 FormulaHelper.InsertNativeWord(Object app, String omml)
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   在 FormulaHelper.InsertEditable(String targetName)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 11:25:23 System.Exception: 请在 Visio 中选中一个由本助手插入的公式。
+   在 FormulaHelper.LoadSelected()
+   在 FormulaHelper.LoadTarget()
+   在 FormulaHelper.Run(Action action)
+2026/11/11 11:25:27 System.Exception: 请先选中要更新的一个公式。
+   在 FormulaHelper.Insert(Boolean replace)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 11:25:37 System.Exception: 请在 Visio 中选中一个由本助手插入的公式。
+   在 FormulaHelper.LoadSelected()
+   在 FormulaHelper.LoadTarget()
+   在 FormulaHelper.Run(Action action)
+2026/11/11 11:25:52 System.Exception: Undefined control sequence \)
+
+   在 FormulaHelper.Render()
+   在 FormulaHelper.Insert(Boolean replace)
+   在 FormulaHelper.InsertEditable(String targetName)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 11:25:57 System.Exception: Undefined control sequence \)
+
+   在 FormulaHelper.Render()
+   在 FormulaHelper.CopyEditableFormula(String targetName)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 11:25:59 System.Exception: Undefined control sequence \)
+
+   在 FormulaHelper.Render()
+   在 FormulaHelper.Insert(Boolean replace)
+   在 FormulaHelper.InsertEditable(String targetName)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 11:26:06 System.Exception: Undefined control sequence \)
+
+   在 FormulaHelper.Render()
+   在 FormulaHelper.InsertEditable(String targetName)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 11:26:10 Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 FormulaHelper.InsertNativeWord(Object app, String omml)
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   在 FormulaHelper.InsertEditable(String targetName)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 11:26:14 Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 FormulaHelper.InsertNativeWord(Object app, String omml)
+   在 FormulaHelper.InsertEditable(String targetName)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 11:26:26 Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 FormulaHelper.InsertNativeWord(Object app, String omml)
+   在 FormulaHelper.InsertEditable(String targetName)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 11:27:22 System.Exception: 可编辑公式请直接在目标软件中修改。图形源码功能用于 Visio 或未勾选“可编辑”时插入的图形。
+   在 FormulaHelper.<.ctor>b__8()
+   在 FormulaHelper.Run(Action action)
+2026/11/11 11:27:26 System.Exception: 可编辑公式无需重新生成，请在 Word/PPT/WPS 中点击公式内部编辑。
+   在 FormulaHelper.<.ctor>b__9()
+   在 FormulaHelper.Run(Action action)
+2026/11/11 11:27:33 Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 FormulaHelper.InsertNativeWord(Object app, String omml)
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   在 FormulaHelper.InsertEditable(String targetName)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 11:28:31 Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 FormulaHelper.InsertNativeWord(Object app, String omml)
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   在 FormulaHelper.InsertEditable(String targetName)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 12:14:49 System.Runtime.InteropServices.COMException (0x86DB089A): 
+
+请求的操作目前被禁用。
+   在 System.Dynamic.ComRuntimeHelpers.CheckThrowException(Int32 hresult, ExcepInfo& excepInfo, UInt32 argErr, String message)
+   在 CallSite.Target(Closure , CallSite , ComObject , String )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   在 FormulaHelper.Insert(Boolean replace)
+   在 FormulaHelper.InsertEditable(String targetName)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 12:14:58 System.Runtime.InteropServices.COMException (0x86DB089A): 
+
+请求的操作目前被禁用。
+   在 System.Dynamic.ComRuntimeHelpers.CheckThrowException(Int32 hresult, ExcepInfo& excepInfo, UInt32 argErr, String message)
+   在 CallSite.Target(Closure , CallSite , ComObject , String )
+   在 FormulaHelper.Insert(Boolean replace)
+   在 FormulaHelper.InsertEditable(String targetName)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 12:15:04 System.Runtime.InteropServices.COMException (0x86DB089A): 
+
+请求的操作目前被禁用。
+   在 System.Dynamic.ComRuntimeHelpers.CheckThrowException(Int32 hresult, ExcepInfo& excepInfo, UInt32 argErr, String message)
+   在 CallSite.Target(Closure , CallSite , ComObject , String )
+   在 FormulaHelper.Insert(Boolean replace)
+   在 FormulaHelper.InsertEditable(String targetName)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 12:15:25 System.Runtime.InteropServices.COMException (0x86DB089A): 
+
+请求的操作目前被禁用。
+   在 System.Dynamic.ComRuntimeHelpers.CheckThrowException(Int32 hresult, ExcepInfo& excepInfo, UInt32 argErr, String message)
+   在 CallSite.Target(Closure , CallSite , ComObject , String )
+   在 FormulaHelper.Insert(Boolean replace)
+   在 FormulaHelper.InsertEditable(String targetName)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 12:39:03 System.Exception: 请在 Visio 中选中一个由本助手插入的公式。
+   在 FormulaHelper.LoadSelected()
+   在 FormulaHelper.LoadTarget()
+   在 FormulaHelper.Run(Action action)
+2026/11/11 12:39:08 System.Exception: 请先选中要更新的一个公式。
+   在 FormulaHelper.Insert(Boolean replace)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 12:39:13 System.Exception: 没有找到公式源码。请在 GPT/Codex 中完整选中公式后按 Ctrl+C，再提取。只有截图或丢失结构的普通字符时，无法可靠还原 LaTeX。
+   在 FormulaHelper.ExtractClipboardLatex(Boolean copy)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 12:40:31 Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 FormulaHelper.InsertNativeWord(Object app, String omml)
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   在 FormulaHelper.InsertEditable(String targetName)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 12:40:37 Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 FormulaHelper.InsertNativeWord(Object app, String omml)
+   在 FormulaHelper.InsertEditable(String targetName)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 12:41:07 Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 FormulaHelper.InsertNativeWord(Object app, String omml)
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   在 FormulaHelper.InsertEditable(String targetName)
+   在 FormulaHelper.InsertTarget(Boolean replace)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 12:43:28 System.Exception: 没有找到公式源码。请在 GPT/Codex 中完整选中公式后按 Ctrl+C，再提取。只有截图或丢失结构的普通字符时，无法可靠还原 LaTeX。
+   在 FormulaHelper.ExtractClipboardLatex(Boolean copy)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 12:49:45 System.Exception: 没有找到公式源码。请在 GPT/Codex 中完整选中公式后按 Ctrl+C，再提取。只有截图或丢失结构的普通字符时，无法可靠还原 LaTeX。
+   在 FormulaHelper.ExtractClipboardLatex(Boolean copy)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 12:49:51 System.Exception: 没有找到公式源码。请在 GPT/Codex 中完整选中公式后按 Ctrl+C，再提取。只有截图或丢失结构的普通字符时，无法可靠还原 LaTeX。
+   在 FormulaHelper.ExtractClipboardLatex(Boolean copy)
+   在 FormulaHelper.Run(Action action)
+2026/11/11 12:53:34 System.Exception: 没有找到公式源码。请在 GPT/Codex 中完整选中公式后按 Ctrl+C，再提取。只有截图或丢失结构的普通字符时，无法可靠还原 LaTeX。
+   在 FormulaHelper.ExtractClipboardLatex(Boolean copy)
+   在 FormulaHelper.Run(Action action)

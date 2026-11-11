@@ -1,0 +1,13 @@
+每次复制下面的一行公式，回到 Visio 按 Ctrl+Alt+V。
+
+q_d(t)=q_0+(q_f-q_0)(10\tau^3-15\tau^4+6\tau^5),\quad \tau=t/T
+
+q_d(t)\xrightarrow{\mathrm{TD}}\bigl(v_1(t),v_2(t)\bigr)
+
+q_r(t)=\sum_i A_i v_1(t-t_i)
+
+\dot q_r(t)=\sum_i A_i v_2(t-t_i)
+
+e_q=q_r-\hat q,\qquad e_v=\dot q_r-\hat{\dot q}
+
+\tau=\frac{k_p e_q+k_d e_v-z_3}{b_0}

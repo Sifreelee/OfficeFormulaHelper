@@ -1,0 +1,23 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi>q</mi>
+  <mi>d</mi>
+  <mo stretchy="false">(</mo>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+  <mo stretchy="false">&#x2192;</mo>
+  <mi>T</mi>
+  <mi>D</mi>
+  <mo stretchy="false">(</mo>
+  <mi>v</mi>
+  <mn>1</mn>
+  <mo stretchy="false">(</mo>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+  <mo>,</mo>
+  <mi>v</mi>
+  <mn>2</mn>
+  <mo stretchy="false">(</mo>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+  <mo stretchy="false">)</mo>
+</math>

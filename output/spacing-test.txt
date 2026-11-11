@@ -1,0 +1,1 @@
+﻿PASS generated rows have 1.2em gaps; legacy batches normalized; native Office equations carry double row-gap rule.

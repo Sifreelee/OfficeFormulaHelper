@@ -1,0 +1,48 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msub>
+    <mi>e</mi>
+    <mi>q</mi>
+  </msub>
+  <mo>=</mo>
+  <msub>
+    <mi>q</mi>
+    <mi>r</mi>
+  </msub>
+  <mo>&#x2212;</mo>
+  <mrow data-mjx-texclass="ORD">
+    <mover>
+      <mi>q</mi>
+      <mo stretchy="false">^</mo>
+    </mover>
+  </mrow>
+  <mo>,</mo>
+  <mstyle scriptlevel="0">
+    <mspace width="2em"></mspace>
+  </mstyle>
+  <msub>
+    <mi>e</mi>
+    <mi>v</mi>
+  </msub>
+  <mo>=</mo>
+  <msub>
+    <mrow data-mjx-texclass="ORD">
+      <mover>
+        <mi>q</mi>
+        <mo>&#x2D9;</mo>
+      </mover>
+    </mrow>
+    <mi>r</mi>
+  </msub>
+  <mo>&#x2212;</mo>
+  <mrow data-mjx-texclass="ORD">
+    <mover>
+      <mrow data-mjx-texclass="ORD">
+        <mover>
+          <mi>q</mi>
+          <mo>&#x2D9;</mo>
+        </mover>
+      </mrow>
+      <mo stretchy="false">^</mo>
+    </mover>
+  </mrow>
+</math>

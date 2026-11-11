@@ -1,0 +1,41 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msub>
+    <mi>q</mi>
+    <mi>d</mi>
+  </msub>
+  <mo stretchy="false">(</mo>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+  <mover>
+    <mstyle scriptlevel="0">
+      <mo data-mjx-texclass="REL">&#x2192;</mo>
+    </mstyle>
+    <mpadded width="+0.833em" lspace="0.278em" voffset="-.2em" height="-.2em">
+      <mrow data-mjx-texclass="ORD">
+        <mi data-mjx-auto-op="false">TD</mi>
+      </mrow>
+      <mspace depth=".25em"></mspace>
+    </mpadded>
+  </mover>
+  <mrow data-mjx-texclass="OPEN">
+    <mo minsize="1.2em" maxsize="1.2em">(</mo>
+  </mrow>
+  <msub>
+    <mi>v</mi>
+    <mn>1</mn>
+  </msub>
+  <mo stretchy="false">(</mo>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+  <mo>,</mo>
+  <msub>
+    <mi>v</mi>
+    <mn>2</mn>
+  </msub>
+  <mo stretchy="false">(</mo>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+  <mrow data-mjx-texclass="CLOSE">
+    <mo minsize="1.2em" maxsize="1.2em">)</mo>
+  </mrow>
+</math>

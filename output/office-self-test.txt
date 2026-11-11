@@ -1,0 +1,8 @@
+﻿PASS Word: SVG insertion, source readback, selected prose preserved
+PASS Word: update, source persistence, one-step undo
+PASS Word: four formula types rendered to PDF
+PASS Word: source survives save and reopen
+PASS PPT: SVG insertion and source readback for four formulas
+PASS PPT: update selected formula and preserve shape count
+PASS PPT: one-step undo restores previous formula
+PASS PPT: source survives save and reopen

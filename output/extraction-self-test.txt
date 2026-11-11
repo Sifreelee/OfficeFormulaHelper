@@ -1,0 +1,15 @@
+﻿PASS Codex data-math-source exact extraction
+PASS HTML entities decoded once
+PASS KaTeX MathML annotation
+PASS Multiple formulas preserve order and deduplicate
+PASS Delimited formulas in copied response
+PASS Ordinary prose rejected
+PASS Image-only clipboard rejected
+PASS Nested and multi-character scripts preserved exactly
+PASS Flattened ambiguous subscripts are not guessed
+PASS Single-character plain LaTeX scripts preserved
+PASS Mixed prose stripped without changing scripts
+PASS Multiple formulas automatically merged in order
+PASS Generated formula rows have explicit vertical gaps
+PASS Text with no math leaves clipboard untouched
+PASS LaTeX copy provides only editable text, no images or embedded objects

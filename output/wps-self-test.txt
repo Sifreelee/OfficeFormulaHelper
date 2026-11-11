@@ -1,0 +1,1 @@
+﻿PASS WPS source mode: Unicode LaTeX text only; subscripts, superscripts and fractions preserved; no bitmap, HTML or OLE object formats.

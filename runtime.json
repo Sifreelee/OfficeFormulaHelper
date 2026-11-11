@@ -1,0 +1,4 @@
+{
+  "node": "vendor/node/node.exe",
+  "modules": "vendor/node_modules"
+}

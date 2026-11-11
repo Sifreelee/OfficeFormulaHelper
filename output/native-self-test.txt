@@ -1,0 +1,2 @@
+﻿PASS Word: 3 native OMaths, no pictures, direct character editing, PDF export
+PASS PPT: editable native math text shape, direct character edit, persisted fraction structure
