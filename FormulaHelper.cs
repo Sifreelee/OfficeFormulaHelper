@@ -27,12 +27,12 @@ partial class FormulaHelper : Form {
     public FormulaHelper() {
         Directory.CreateDirectory(Path.Combine(root,"output")); Directory.CreateDirectory(Path.Combine(root,"temp"));
         runtime=json.Deserialize<Dictionary<string,object>>(File.ReadAllText(Path.Combine(root,"runtime.json")));
-        Text="通用公式助手 v1.0.0 · GPT 公式提取 / Office 可编辑公式"; Width=1060; Height=660; MinimumSize=new Size(1060,580);
+        Text="通用公式助手 v1.0.0 · GPT 公式提取 / Office 可编辑公式"; Width=1060; Height=700; MinimumSize=new Size(1060,620);
         StartPosition=FormStartPosition.CenterScreen; Font=new Font("Microsoft YaHei UI",10);
         var layout=new TableLayoutPanel {Dock=DockStyle.Fill,RowCount=6,ColumnCount=1,Padding=new Padding(12)};
         layout.RowStyles.Add(new RowStyle(SizeType.Absolute,48));layout.RowStyles.Add(new RowStyle(SizeType.Percent,52));
-        layout.RowStyles.Add(new RowStyle(SizeType.Absolute,44));layout.RowStyles.Add(new RowStyle(SizeType.Absolute,52));layout.RowStyles.Add(new RowStyle(SizeType.Percent,48));layout.RowStyles.Add(new RowStyle(SizeType.Absolute,48));
-        var hint=new Label {Text="复制 GPT/Codex 的公式或含公式的回答：自动过滤文字、提取 LaTeX，并原样保留上下标。\n“复制 LaTeX 源码”输出可直接修改的代码文本；WPS 默认也复制源码；Visio 使用矢量图片。",Dock=DockStyle.Fill};
+        layout.RowStyles.Add(new RowStyle(SizeType.Absolute,44));layout.RowStyles.Add(new RowStyle(SizeType.Absolute,88));layout.RowStyles.Add(new RowStyle(SizeType.Percent,48));layout.RowStyles.Add(new RowStyle(SizeType.Absolute,48));
+        var hint=new Label {Text="要显示成分式、上下标并直接编辑：选好目标软件，点击“复制可编辑公式”，再 Ctrl+V。\n“复制 LaTeX 源码”仅输出代码文本，不会自动变成公式。WPS/Word 请用 .docx，演示请用 .pptx。",Dock=DockStyle.Fill};
         editor.Multiline=true;editor.ScrollBars=ScrollBars.Both;editor.AcceptsReturn=true;editor.WordWrap=false;editor.Dock=DockStyle.Fill;
         editor.Font=new Font("Consolas",13);editor.Text=@"q_r(t)=\sum_i A_i v_1(t-t_i),\qquad \dot q_r(t)=\sum_i A_i v_2(t-t_i)";
         var buttons=new FlowLayoutPanel {Dock=DockStyle.Fill,Padding=new Padding(0,8,0,0)};
@@ -42,6 +42,7 @@ partial class FormulaHelper : Form {
         AddButton(buttons,"预览",()=>{Render();});
         AddButton(buttons,"放大核对",ShowLargeFormula);
         AddButton(buttons,"插入公式",()=>{InsertTarget(false);});
+        AddButton(buttons,"复制可编辑公式",()=>{CopyEditableFormula(Target());});
         AddButton(buttons,"复制 LaTeX 源码",CopyLatexSource);
         AddButton(buttons,"读取图形源码",()=>{if(nativeMode.Checked&&Target()!="Visio")throw new Exception("可编辑公式请直接在目标软件中修改。图形源码功能用于 Visio 或未勾选“可编辑”时插入的图形。");LoadTarget();});
         AddButton(buttons,"更新图形公式",()=>{if(nativeMode.Checked&&Target()!="Visio")throw new Exception("可编辑公式无需重新生成，请在 Word/PPT/WPS 中点击公式内部编辑。");InsertTarget(true);});

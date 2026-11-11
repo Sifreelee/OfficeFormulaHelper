@@ -62,7 +62,7 @@ partial class FormulaHelper {
         clipboardDocument=null;clipboardApp=null;
     }
     void CopyEditableFormula(string targetName){
-        if(targetName.StartsWith("WPS",StringComparison.Ordinal)){ReleaseNativeClipboardSource();CopyLatexSource();return;}
+        if(targetName=="Visio")throw new Exception("Visio 使用图片输出。要复制可编辑公式，请在目标下拉框明确选择 Word、WPS 文字、PowerPoint 或 WPS 演示。");
         var data=Render();string omml=Omml(data);ReleaseNativeClipboardSource();
         clipboardPresentation=targetName=="PowerPoint"||targetName=="WPS 演示";
         try{
@@ -76,7 +76,7 @@ partial class FormulaHelper {
                 clipboardDocument.Slides[1].Shapes[1].Copy();
             }
             System.Threading.Thread.Sleep(200);
-            status.Text="排版公式对象已复制。LaTeX 代码文本请使用“复制 LaTeX 源码”。";
+            status.Text="已复制可编辑排版公式，请在 "+targetName+" 的 .docx/.pptx 中 Ctrl+V；不要选“仅保留文本”或“粘贴为图片”。";
         }catch{ReleaseNativeClipboardSource();throw;}
     }
     void PutWordEquation(dynamic range,string omml) {
@@ -214,11 +214,28 @@ partial class FormulaHelper {
         }finally{if(doc!=null)doc.Close(0);if(wordTest!=null){if(wordTest.Documents.Count==0)wordTest.Quit(0);wordTest=null;}}
     }
     void SelfTestWps() {
-        string source=@"q_{d,i}^{(2)}=\frac{a_1+b_2}{c^2}";
-        var data=LatexTextData(source);
-        if((string)data.GetData(DataFormats.UnicodeText)!=source)throw new Exception("LaTeX source changed");
-        foreach(string format in new[]{DataFormats.Bitmap,DataFormats.Html,"Embed Source","EnhancedMetafile"})
-            if(data.GetDataPresent(format))throw new Exception("Unexpected non-text format: "+format);
-        File.WriteAllText(Path.Combine(root,"output","wps-self-test.txt"),"PASS WPS source mode: Unicode LaTeX text only; subscripts, superscripts and fractions preserved; no bitmap, HTML or OLE object formats.",Encoding.UTF8);
+        dynamic app=null,doc=null,previous=null;
+        var report=new List<string>();
+        try {
+            app=Activator.CreateInstance(Type.GetTypeFromProgID("KWPS.Application"));
+            try{previous=app.ActiveWindow;}catch{}
+            doc=app.Documents.Add();
+            string file=Path.Combine(root,"temp","wps_docx_validation_"+Guid.NewGuid().ToString("N")+".docx");
+            doc.SaveAs(file,12);
+            editor.Text=@"q_{d,i}^{(2)}=\frac{a_1+b_2}{c^2}+\dot q_r";
+            CopyEditableFormula("WPS 文字");
+            doc.Range(0,0).Paste();
+            if(doc.OMaths.Count!=1||doc.InlineShapes.Count!=0)throw new Exception("WPS .docx 中未粘贴成原生数学公式");
+            doc.OMaths[1].Range.Characters[1].Text="p";
+            doc.Save();doc.Close(0);doc=null;
+            doc=app.Documents.Open(file);
+            if(doc.OMaths.Count!=1||doc.InlineShapes.Count!=0)throw new Exception("WPS 重新打开后公式变成图片");
+            report.Add("PASS WPS .docx: pasted as native OMath, zero pictures, direct character edit, preserved after save and reopen");
+            File.WriteAllLines(Path.Combine(root,"output","wps-self-test.txt"),report,Encoding.UTF8);
+        } finally {
+            ReleaseNativeClipboardSource();
+            if(doc!=null)doc.Close(0);
+            if(previous!=null)try{previous.Activate();}catch{}
+        }
     }
 }
